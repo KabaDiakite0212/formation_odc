@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:formation_odc/screens/home_screen.dart';
+import 'package:formation_odc/screens/detail_product_screen.dart';
 import 'package:formation_odc/screens/product_screen.dart';
 
 void main() {
@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
     return const CupertinoApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter iOS',
-      // home: MyHomePage(title: 'Formation ODC'),
       home: ProductScreen(),
+      // home: DetailProductScreen(),
     );
   }
 }
