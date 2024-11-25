@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:formation_odc/screens/detail_product_screen.dart';
+import 'package:formation_odc/screens/navigation_bar_screen.dart';
 import 'package:formation_odc/screens/product_screen.dart';
 
 void main() {
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
     return const CupertinoApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter iOS',
-      home: ProductScreen(),
+      // home: ProductScreen(),
       // home: DetailProductScreen(),
+      home: NavigationBarScreen(),
     );
   }
 }
