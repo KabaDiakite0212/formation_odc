@@ -14,13 +14,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return CupertinoApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter iOS',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-        primarySwatch:  Colors.blue,
-      ),
+    
       // home: ProductScreen(),
       // home: DetailProductScreen(),
       home: const NavigationBarScreen(),

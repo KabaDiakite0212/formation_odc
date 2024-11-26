@@ -7,7 +7,7 @@ class CustomText extends StatelessWidget {
        this.fontSize = 20,
        this.fontWeight = FontWeight.normal,
        this.fontStyle = FontStyle.normal,
-       this.color = CupertinoColors.white,
+       this.color = CupertinoColors.systemRed,
        this.maxLines = 1
        });
 
