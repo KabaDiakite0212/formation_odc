@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:formation_odc/screens/basic_screen.dart';
 import 'package:formation_odc/screens/product_screen.dart';
 import 'package:formation_odc/screens/profile_screen.dart';
 
@@ -37,10 +37,10 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
       tabBuilder: (context, index) {
         switch (index) {
           case 0:
-           return  const ProductScreen();
+           return  const BasicScreen();
           
           case 1:
-           return  const ProfileScreen();
+           return  const ProductScreen();
           case 2:
            return  const ProfileScreen();
           

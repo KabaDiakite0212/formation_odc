@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:formation_odc/screens/detail_product_screen.dart';
 import 'package:formation_odc/screens/navigation_bar_screen.dart';
 import 'package:formation_odc/screens/product_screen.dart';
@@ -13,12 +14,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter iOS',
+      theme: ThemeData(
+        primaryColor: Colors.blue,
+        primarySwatch:  Colors.blue,
+      ),
       // home: ProductScreen(),
       // home: DetailProductScreen(),
-      home: NavigationBarScreen(),
+      home: const NavigationBarScreen(),
     );
   }
 }
