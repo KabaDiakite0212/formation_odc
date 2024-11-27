@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Veuilez autoriser la selection de l'image dans la gallerie</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Veuillez autoriser notre application à acceder à votre appareil photo</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Veuilez autoriser la selection de l'image dans la gallerie</string>
 </dict>
 </plist>
