@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:formation_odc/screens/basic_screen.dart';
+import 'package:formation_odc/screens/date_time_picker_screen.dart';
 import 'package:formation_odc/screens/product_screen.dart';
 import 'package:formation_odc/screens/profile_screen.dart';
 import 'package:formation_odc/screens/textfield_validation_sreen.dart';
@@ -38,7 +39,7 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
       tabBuilder: (context, index) {
         switch (index) {
           case 0:
-           return  const TextfieldValidationSreen();
+           return  const DateTimePickerScreen();
           
           case 1:
            return  const ProductScreen();
