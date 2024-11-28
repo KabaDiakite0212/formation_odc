@@ -11,9 +11,6 @@ class AnimationWidgetsScreen extends StatefulWidget {
 }
 
 class _AnimationWidgetsScreenState extends State<AnimationWidgetsScreen> {
-  final GlobalKey<AnimatorWidgetState> basicKey = GlobalKey<AnimatorWidgetState>();
-  final GlobalKey<AnimatorWidgetState> basicKey2 = GlobalKey<AnimatorWidgetState>();
-
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -25,7 +22,7 @@ class _AnimationWidgetsScreenState extends State<AnimationWidgetsScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             BounceIn(
-              key: basicKey,
+              preferences: AnimationPreferences(duration: Duration(seconds: 2)),
               child: Container(
                 margin: const EdgeInsets.all(10),
                 height: 300,
@@ -44,9 +41,9 @@ class _AnimationWidgetsScreenState extends State<AnimationWidgetsScreen> {
                 ),
               ),
             ),
-                       BasicWidgets.heightSize(20),
-            BounceOut(
-              key: basicKey2,
+            BasicWidgets.heightSize(20),
+            SlideInLeft(
+              preferences: AnimationPreferences(duration: Duration(seconds: 2)),
               child: Container(
                 margin: const EdgeInsets.all(10),
                 height: 300,
@@ -65,8 +62,6 @@ class _AnimationWidgetsScreenState extends State<AnimationWidgetsScreen> {
                 ),
               ),
             ),
-                       
-
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animator/flutter_animator.dart';
 import 'package:formation_odc/data/get_products.dart';
 import 'package:formation_odc/screens/detail_product_screen.dart';
 import 'package:formation_odc/widgets/product_card.dart';
@@ -25,11 +26,19 @@ class _ProductScreenState extends State<ProductScreen> {
                 // closedColor: Colors.red,
                 // openColor: Colors.blue,
                 closedBuilder: (context, _) {
-                return ProductCard(
-                  title: products[index].title,
-                  description: products[index].description,
-                  price: products[index].price,
-                  image: products[index].image,
+                return SlideInLeft(
+                  preferences: AnimationPreferences(
+                    duration: Duration(
+                      seconds: 1 + index
+                      // milliseconds: 300 + ( index )
+                    ),
+                  ),
+                  child: ProductCard(
+                    title: products[index].title,
+                    description: products[index].description,
+                    price: products[index].price,
+                    image: products[index].image,
+                  ),
                 );
               }, openBuilder: (context, _) {
                 return DetailProductScreen(

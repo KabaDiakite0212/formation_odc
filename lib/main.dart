@@ -17,14 +17,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter iOS',
     
-      // home: ProductScreen(),
+      home: DateTimePickerScreen(),
       // home: DetailProductScreen(),
       // home: ImagePickerScreen(),
-      home: AnimationWidgetsScreen(),
+      // home: AnimationWidgetsScreen(),
     );
   }
 }
